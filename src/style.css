@@ -1,0 +1,13 @@
+header {
+  background: #000;
+}
+.header-logo {
+  text-align: center;
+}
+.vertical-menu {
+  background: yellow;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
