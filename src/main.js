@@ -4,3 +4,8 @@ lima.addEventListener("click",event => {
   impresion.innerHTML = window.generaciones.generation();
 }
 )
+mex.addEventListener("click",event => {
+  let impresion2 = document.getElementById("generacionMex");
+  impresion2.innerHTML = window.generaciones.generation();
+}
+)
