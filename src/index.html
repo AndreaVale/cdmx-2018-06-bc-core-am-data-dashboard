@@ -5,34 +5,37 @@
     <title>Data Dashboard</title>
     <link rel="stylesheet" href="style.css" />
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   </head>
   <body>
     <header class="row">
       <div class="header-logo col-sm-3">
         <img src="../src/images/logo_laboratoria.png" alt="Laboratoria">
+
       </div>
       <div class="info-users col-sm-9">
-        <h4 id="usuario"></h4>
-        <img id="imagen" src="" alt="">
+        <h3 class="usuarix" id="usuario">USUARIX<i class="icono fab fa-rebel"></i></h3>
       </div>
     </header>
-    <div class="vertical-menu col-sm-3">
-      <nav class="navbar navbar-default" id="lima">
-         Lima
-         <p id="generacionlima"></p>
-      </nav>
-      <nav class="navbar navbar-default" id="mex">
-        México
-        <p id="generacionMex"></p>
-      </nav>
-      <nav class="navbar navbar-default" id="sant">
-        Santiago
-      </nav>
-    </div>
-    <div class="container col-sm-9">
 
+    <div class="contenedor-menu col-lg-3">
+      <ul class="menu">
+      <ol id="lima">Lima<i class="fas fa-angle-down"></i>
+         <p id="generacionlima"></p>
+      </ol>
+      <ol id="mex">México<i class="fas fa-angle-down"></i>
+        <p id="generacion-mex"></p>
+      </ol>
+      <ol id="stg">Santiago<i class="fas fa-angle-down"></i>
+        <p id="generacion-stg"></p>
+      </ol>
+      </ul>
     </div>
+
+
+
+
     <script src="main.js"></script>
     <script src="data.js"></script>
     <!--<script src="../data/laboratoria.json"></script>-->
