@@ -1,22 +1,42 @@
-const objetoLima = {
-  generacion:"tercera, cuarta, quinta"
-  }
-const objetoMex = {
-  generacion:"tercera, cuarta, quinta",
+window.getData = async () => {
+  const url = 'https://raw.githubusercontent.com/AndreaVale/cdmx-2018-06-bc-core-am-data-dashboard/master/data/laboratoria.json';
+  const promiseData = await fetch(url);
+  laboratoria = await promiseData.json();
 }
-const objetoSant = {
-  generacion:"tercera, cuarta, quinta",
-}
+window.data = {
+computeStudentsStats: () => {
 
-const objetoSedes = [objetoLima,objetoMex,objetoSant];
+},
+computeGenerationsStats: () =>  {
 
-window.generaciones = {
- generation: () => {
-    for (var i = 0; i < objetoSedes.length; i++) {
-      return objetoSedes[i].generacion
-    }
-  }
+},
+sortStudents: () => {
+
+},
+filterStudents: () => {
+
+},
 };
+
+//const objetoLima = {
+  //generacion:"tercera, cuarta, quinta"
+  //}
+//const objetoMex = {
+  //generacion:"tercera, cuarta, quinta",
+//}
+//const objetoSant = {
+  //generacion:"tercera, cuarta, quinta",
+//}
+
+//const objetoSedes = [objetoLima,objetoMex,objetoSant];
+
+//window.generaciones = {
+ //generation: () => {
+    //for (var i = 0; i < objetoSedes.length; i++) {
+      //return objetoSedes[i].generacion
+    //}
+  //}
+//};
   //const json= () => {
   //let link = "https://api.myjson.com/bins/b18p2";
   //fetch(link).then(function(datos){
