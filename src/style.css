@@ -9,36 +9,51 @@ text-align: right;
 margin-top: 30px;
 margin-right: 100px;
 color: white;
-font-family: 'Montserrat', sans-serif;
 line-height: 20px;
-
 }
 .row .info-users .usarix .icono{
   line-height: 18px;
   margin-right: 90px;
 }
-
 .header-logo {
   text-align: center;
 }
-.conteiner{
-  background-color: yellow;
-}
-.contenedor-menu {
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
+.nav-side-menu {
+  position: fixed !important;
+  height: 100% !important;
   background: yellow;
   font-size: 25px;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
+  padding: 5% 0 0;
 }
-.contenedor-menu .menu ol p {
-  background: #4242;
-  color: black;
+.nav-side-menu label {
+	display: block;
+	padding: 10px;
+  cursor: pointer;
 }
-.contenedor-menu .menu ol:hover {
-  background: #4241;
-  color: black;
+.nav-side-menu label:hover{
+	background: #ffffffb8;
+}
+.nav-side-menu ul{
+	width: 100%;
+	list-style: none;
+	overflow: hidden;
+	max-height: 0;
+	transition: all .4s linear;
+  padding: 0;
+}
+.nav-side-menu input{
+	display: none;
+}
+.nav-side-menu ul li:hover{
+	background-color: #ffffffb8;
+  cursor: pointer;
+}
+.nav-side-menu input:checked ~ ul{
+	height: auto;
+	max-height: 200px;
+	transform: all;
+  font-size: 20px;
 }
