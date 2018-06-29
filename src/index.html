@@ -25,7 +25,7 @@
       <div class="nav-side-menu col-lg-3">
         <div class="menu">
           <input type="checkbox" id="check1">
-          <label for="check1">Lima</label>
+          <label id="sede-lima" for="check1"></label>
           <ul>
              <p class="active">Generación</p>
              <li id="generacion-uno-lima"></li>
@@ -35,29 +35,45 @@
         </div>
         <div class="menu">
           <input type="checkbox" id="check2">
-          <label for="check2">México</label>
+          <label id="sede-mex" for="check2"></label>
           <ul>
             <p>Generación</p>
-            <li id="generacion-uno-mex">Primera</li>
-            <li id="generacion-dos-mex">Segunda</li>
-            <li id="generacion-tres-mex">Tercera</li>
+            <li id="generacion-uno-mex"></li>
+            <li id="generacion-dos-mex"></li>
+            <li id="generacion-tres-mex"></li>
           </ul>
         </div>
         <div class="menu">
           <input type="checkbox" id="check3">
-          <label for="check3">Santiago</label>
+          <label id="sede-snt" for="check3"></label>
           <ul>
             <p>Generación</p>
-            <li id="generacion-uno-stg">Primera</li>
-            <li id="generacion-dos-stg">Segunda</li>
-            <li id="generacion-tres-stg">Tercera</li>
+            <li id="generacion-uno-stg"></li>
+            <li id="generacion-dos-stg"></li>
+            <li id="generacion-tres-stg"></li>
           </ul>
         </div>
       </div>
     </nav>
-
+    <!-- Contenido Dinamico -->
+    <div class="content col-lg-9">
+      <!-- Buscador -->
+      <div class="search">
+        <div class="input-group">
+            <input type="text" class="form-control">
+            <span class="input-group-btn">
+              <button class="btn btn-default form-control" type="button">Buscar</button>
+            </span>
+        </div>
+      </div>
+      <!-- Sección de Estudiantes -->
+      <div class="students">
+        <h1>Estudiantes:</h1>
+        <p id="alumnas"></p>
+      </div>
+    </div>
+    <!-- Scripts -->
     <script src="main.js"></script>
     <script src="data.js"></script>
-    <!--<script src="../data/laboratoria.json"></script>-->
   </body>
 </html>
