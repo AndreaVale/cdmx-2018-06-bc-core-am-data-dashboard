@@ -57,3 +57,17 @@ line-height: 20px;
 	transform: all;
   font-size: 20px;
 }
+.content {
+  float: right;
+}
+.search {
+  float: right;
+  padding: 20px;
+}
+.form-control {
+  background: #000 !important;
+  color: #fff !important;
+}
+.students {
+  margin: 50px 50px 0;
+}
