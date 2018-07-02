@@ -30,7 +30,7 @@ line-height: 20px;
 }
 .nav-side-menu label {
 	display: block;
-	padding: 10px;
+	padding: 5px;
   cursor: pointer;
 }
 .nav-side-menu label:hover{
@@ -55,7 +55,7 @@ line-height: 20px;
 	height: auto;
 	max-height: 200px;
 	transform: all;
-  font-size: 20px;
+  font-size: 16px;
 }
 .content {
   float: right;
