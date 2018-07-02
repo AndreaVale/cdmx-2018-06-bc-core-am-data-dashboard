@@ -68,6 +68,9 @@ line-height: 20px;
   background: #000 !important;
   color: #fff !important;
 }
-.students {
+.container {
   margin: 50px 50px 0;
+}
+.col-lg-8{
+  background-color: #E0E0E0;
 }
