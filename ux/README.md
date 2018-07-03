@@ -9,52 +9,65 @@ Nuestro primer acercamiento lo haremos a través del proceso de diseño, donde p
 
 También vamos a tener en cuenta al negocio, sus objetivos y a los stakeholders(involucrados)).
 
-__Usuarixs:__  (Toda la información que sepas de ellxs, ya sea porque las has podido observar o porque obtuviste datos directamente de ellas)
+__Usuarixs:__  Karla Rejas, training manager de la sede de Guadalajara, México; Valentina Smith, training manager de la sede de Santiago, Chile; Alejandra Ramirez, training manager de la sede de Lima.
 
-__Necesidades de las usuarias:__
-
-
-__Objetivos de las usuarias:__ (Lo que quieren o esperan lograr)
+__Necesidades de las usuarias__ Las usuarias necesitan una interfaz donde puedan consultar de una manera rápida, segura, eficaz y sencilla los datos del avance de las alumnas en el LMS.
 
 
-__Pain points:__ (En sus actividades diarias qué es lo que más les molesta u obstaculiza en el proceso de  realizar sus actividades/objetivos)
+__Objetivos de las usuarias:__ Consultar los datos de las alumnas en el LMS para poder sacar sus propias conclusiones de los progresos alcanzados, así como saber que alumnas van mejor y quien no tanto.
 
-__Sentimientos:__(Sentimientos que les surgen dentro del proceso de sus actividades. Identificar cuáles predominan)
 
-__Técnicas usadas en esta fase:__ (Sabemos que en este punto, tal vez, sólo has ocupado encuestas, no te olvides de documentar este proceso de recolección de datos)
+__Pain points:__ Los principales pain points del sistema actual son la desesperación, y la impaciencia al querer entrar directamente al dato requerido por las TM.
 
-__5. Objetivos del negocio:__ (Enlistarlo(s))
+__Sentimientos:__ Según las entrevistas recabadas los principales sentimientos fluctuan entre la impaciencia y la frustración al momento de usar la data base actual (Excel).
 
-__6. Motivaciones del negocio para el data dashboard:__(Enlistarlo(s))
+__Técnicas usadas en esta fase:__ Para el proceso de recolección de datos se recurrió a dos entrevistas vía videollamadas. La primera fue  con Karla Rejas, training manager de la sede de Guadalajara, México y la segunda con Valentina Smith, training manager de Santiago, Chile.
+También se recurrió a cuestionarios vía Google Forms con Alejandra Ramirez, training manager de Lima.
+Para nuestra prueba de usuario recurrimos a Lucille Barathier, training manager de la sede de CDMX, México.
+__5. Objetivos del negocio:__
+-Ahorrar tiempo en la recolección de datos
+-Ahorrar recursos de Laboratoria al momento de consultar datos
+
+__6. Motivaciones del negocio para el data dashboard:__
+
+-Observar el progreso de las alumnas para poder identificar su forma de aprendizaje y su desempeño.
 
 ### **2. Síntesis y definición**
-(Dada la fase anterior de investigación, ahora vamos a tomar todos los datos más importantes y transformarlos en información valiosa para comenzar a orientarse a la solución. También vamos a entender lo que la empresa quiere de ese producto y comenzar a entender ambas visiones con el fin de encontrar un punto armónico)
+Las Training Managers necesitan una interfaz sencilla, intuitiva, rápida y confiable para ingresar a los avances del LMS de las alumnas.
+En primera instancia les gustaría ver un promedio general de la clase, también tener un apartado donde por cada generación aparezcan las chicas más avanzadas en el LMS y las que se están atrasado, para focalizar el problema de las últimas y buscar soluciones oportunas.
+En segundo lugar, es importante para las TM poder compartir los datos del LMS con las estudiantes en tiempo real.
+
+Mientras tanto, lo que la empresa quiere es reducir los tiempos y costos usados para la consulta de datos por parte del staff.
+
+
 
 __1. Cuáles crees que son los datos más importantes a tener en cuenta para el Data Dashboard:__
 
-   - Sobre las estudiantes:
+   - Sobre las estudiantes: Su promedio, las chicas más avanzadas, las más atrasadas, el avance de cada unidad y tema tanto individualmente como grupal.
 
 
 __2. Lo que los usuarios esperan obtener:__
-
+Una interfaz rápida, segura, intutiva, sencilla de usar y que brinde oportunamente los datos solicitados.
 
 __3. Insights:__
+Los datos que se generan dentro del bootcamp son de suma importancia para que el staff conozca los avances de las estudiantes de Laboratoria. Para que a partir de la data salga la información necesaria para la toma de decisiones de los temas y dinámicas a implementar dentro del bootcamp.
 
-__4. Data proporcionada:__
+__4. Data proporcionada:__ La
 
-     -_Data relacionada a los cursos:_
+     -_Data relacionada a los cursos:_ Nombre, correo electrónico, turno, y los elementos del LMS con sus repectivos avances.
 
-__5. Insights del negocio:__
+__5. Insights del negocio:__ Es importante para ahorrar tiempos en la consulta de la data el tener una interfaz sencilla y rápida para consultar dichos datos.
 
 ### **3. Ideación**
-(Acá se comienza a pensar esa solución tomando en cuenta la información recopilada y procesada)
+Se piensa en un sitio en el que el staff pueda ver en primera instancia el promedio de avance de cada generación. Con un menú en el que se pueda acceder de una manera directa y fácil a las sedes y generaciones de Laboratoria, para de ahí ingresar a las alumnas de la generación que se está buscando.
+El apartado de alumnas tendrá un buscador en el cual se ingresará el nombre de la alumna que se está buscando y se desplegará toda la información de dicha alumna.
 
 ### **4. Prototipado**
-(Esta es la fase creativa, donde se comienza a construir el Data dashboard con la información obtenida de las fases anteriores. Se reafirma crear la experiencia de usuario, donde la solución resuelve necesidades y facilita la vida)
+Con lo propuesto en la ideación se proponen los siguientes prototipos:
 
 Sketch: https://drive.google.com/drive/folders/1RCNTyYyhhT5iVC5LRX8OEjI5cSyo885k
 
-Prototipo en figma: https://drive.google.com/drive/folders/1Dqzm9kHQXENyKGZkHX31zi93QMIQ2w8D
+Prototipo en figma: https://marvelapp.com/project/3169128/
 
 ### **5. User testing**
 (Si deseas validar tu propuesta, acércate a tu usuario y que te de feedback con el fin de mejorar tu producto en beneficio del negocio y de tu usuarix).
