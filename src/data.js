@@ -22,7 +22,164 @@ fetch(laboratoriaAPI).then((res) => {
       pintaGeneracionesMex(Object.keys(data.mexico.generacion));
       //Imprime generaciones santiago
       pintaGeneracionesSnt(Object.keys(data.santiago.generacion));
-      //Aqui se imprimirian las alumnas de Lima
+      /*//imprime alumnas de lima tercera generacion
+      pintaEstudiantesLimaT(Object.values(data.lima.generacion.tercera.estudiantes[0]));
+      pintaEstudiantesLimaT(Object.values(data.lima.generacion.tercera.estudiantes[1]));
+      pintaEstudiantesLimaT(Object.values(data.lima.generacion.tercera.estudiantes[2]));
+      pintaEstudiantesLimaT(Object.values(data.lima.generacion.tercera.estudiantes[3]));
+      pintaEstudiantesLimaT(Object.values(data.lima.generacion.tercera.estudiantes[4]));
+      pintaEstudiantesLimaT(Object.values(data.lima.generacion.tercera.estudiantes[5]));
+      pintaEstudiantesLimaT(Object.values(data.lima.generacion.tercera.estudiantes[6]));
+      pintaEstudiantesLimaT(Object.values(data.lima.generacion.tercera.estudiantes[7]));
+      pintaEstudiantesLimaT(Object.values(data.lima.generacion.tercera.estudiantes[8]));
+      pintaEstudiantesLimaT(Object.values(data.lima.generacion.tercera.estudiantes[9]));
+      pintaEstudiantesLimaT(Object.values(data.lima.generacion.tercera.estudiantes[10]));
+      pintaEstudiantesLimaT(Object.values(data.lima.generacion.tercera.estudiantes[11]));
+      pintaEstudiantesLimaT(Object.values(data.lima.generacion.tercera.estudiantes[12]));
+      pintaEstudiantesLimaT(Object.values(data.lima.generacion.tercera.estudiantes[13]));
+      pintaEstudiantesLimaT(Object.values(data.lima.generacion.tercera.estudiantes[14]));
+      // imprime alumnas de lima cuarta generacion
+      pintaEstudiantesLimaC(Object.values(data.lima.generacion.cuarta.estudiantes[0]));
+      pintaEstudiantesLimaC(Object.values(data.lima.generacion.cuarta.estudiantes[1]));
+      pintaEstudiantesLimaC(Object.values(data.lima.generacion.cuarta.estudiantes[2]));
+      pintaEstudiantesLimaC(Object.values(data.lima.generacion.cuarta.estudiantes[3]));
+      pintaEstudiantesLimaC(Object.values(data.lima.generacion.cuarta.estudiantes[4]));
+      pintaEstudiantesLimaC(Object.values(data.lima.generacion.cuarta.estudiantes[5]));
+      pintaEstudiantesLimaC(Object.values(data.lima.generacion.cuarta.estudiantes[6]));
+      pintaEstudiantesLimaC(Object.values(data.lima.generacion.cuarta.estudiantes[7]));
+      pintaEstudiantesLimaC(Object.values(data.lima.generacion.cuarta.estudiantes[8]));
+      pintaEstudiantesLimaC(Object.values(data.lima.generacion.cuarta.estudiantes[9]));
+      pintaEstudiantesLimaC(Object.values(data.lima.generacion.cuarta.estudiantes[10]));
+      pintaEstudiantesLimaC(Object.values(data.lima.generacion.cuarta.estudiantes[11]));
+      pintaEstudiantesLimaC(Object.values(data.lima.generacion.cuarta.estudiantes[12]));
+      pintaEstudiantesLimaC(Object.values(data.lima.generacion.cuarta.estudiantes[13]));
+      pintaEstudiantesLimaC(Object.values(data.lima.generacion.cuarta.estudiantes[14]));
+      //imprime alumnas de lima quinta generacion
+      pintaEstudiantesLimaQ(Object.values(data.lima.generacion.quinta.estudiantes[0]));
+      pintaEstudiantesLimaQ(Object.values(data.lima.generacion.quinta.estudiantes[1]));
+      pintaEstudiantesLimaQ(Object.values(data.lima.generacion.quinta.estudiantes[2]));
+      pintaEstudiantesLimaQ(Object.values(data.lima.generacion.quinta.estudiantes[3]));
+      pintaEstudiantesLimaQ(Object.values(data.lima.generacion.quinta.estudiantes[4]));
+      pintaEstudiantesLimaQ(Object.values(data.lima.generacion.quinta.estudiantes[5]));
+      pintaEstudiantesLimaQ(Object.values(data.lima.generacion.quinta.estudiantes[6]));
+      pintaEstudiantesLimaQ(Object.values(data.lima.generacion.quinta.estudiantes[7]));
+      pintaEstudiantesLimaQ(Object.values(data.lima.generacion.quinta.estudiantes[8]));
+      pintaEstudiantesLimaQ(Object.values(data.lima.generacion.quinta.estudiantes[9]));
+      pintaEstudiantesLimaQ(Object.values(data.lima.generacion.quinta.estudiantes[10]));
+      pintaEstudiantesLimaQ(Object.values(data.lima.generacion.quinta.estudiantes[11]));
+      pintaEstudiantesLimaQ(Object.values(data.lima.generacion.quinta.estudiantes[12]));
+      pintaEstudiantesLimaQ(Object.values(data.lima.generacion.quinta.estudiantes[13]));*/
+      //imprime alumnas de Mexico tercera generacion
+      /*
+      pintaEstudiantesMexT(Object.values(data.mexico.generacion.tercera.estudiantes[0]));
+      pintaEstudiantesMexT(Object.values(data.mexico.generacion.tercera.estudiantes[1]));
+      pintaEstudiantesMexT(Object.values(data.mexico.generacion.tercera.estudiantes[2]));
+      pintaEstudiantesMexT(Object.values(data.mexico.generacion.tercera.estudiantes[3]));
+      pintaEstudiantesMexT(Object.values(data.mexico.generacion.tercera.estudiantes[4]));
+      pintaEstudiantesMexT(Object.values(data.mexico.generacion.tercera.estudiantes[5]));
+      pintaEstudiantesMexT(Object.values(data.mexico.generacion.tercera.estudiantes[6]));
+      pintaEstudiantesMexT(Object.values(data.mexico.generacion.tercera.estudiantes[7]));
+      pintaEstudiantesMexT(Object.values(data.mexico.generacion.tercera.estudiantes[8]));
+      pintaEstudiantesMexT(Object.values(data.mexico.generacion.tercera.estudiantes[9]));
+      pintaEstudiantesMexT(Object.values(data.mexico.generacion.tercera.estudiantes[10]));
+      pintaEstudiantesMexT(Object.values(data.mexico.generacion.tercera.estudiantes[11]));
+      pintaEstudiantesMexT(Object.values(data.mexico.generacion.tercera.estudiantes[12]));
+      pintaEstudiantesMexT(Object.values(data.mexico.generacion.tercera.estudiantes[13]));
+      pintaEstudiantesMexT(Object.values(data.mexico.generacion.tercera.estudiantes[14]));
+      // imprime alumnas de Mexico cuarta generacion
+      pintaEstudiantesMexC(Object.values(data.mexico.generacion.cuarta.estudiantes[0]));
+      pintaEstudiantesMexC(Object.values(data.mexico.generacion.cuarta.estudiantes[1]));
+      pintaEstudiantesMexC(Object.values(data.mexico.generacion.cuarta.estudiantes[2]));
+      pintaEstudiantesMexC(Object.values(data.mexico.generacion.cuarta.estudiantes[3]));
+      pintaEstudiantesMexC(Object.values(data.mexico.generacion.cuarta.estudiantes[4]));
+      pintaEstudiantesMexC(Object.values(data.mexico.generacion.cuarta.estudiantes[5]));
+      pintaEstudiantesMexC(Object.values(data.mexico.generacion.cuarta.estudiantes[6]));
+      pintaEstudiantesMexC(Object.values(data.mexico.generacion.cuarta.estudiantes[7]));
+      pintaEstudiantesMexC(Object.values(data.mexico.generacion.cuarta.estudiantes[8]));
+      pintaEstudiantesMexC(Object.values(data.mexico.generacion.cuarta.estudiantes[9]));
+      pintaEstudiantesMexC(Object.values(data.mexico.generacion.cuarta.estudiantes[10]));
+      pintaEstudiantesMexC(Object.values(data.mexico.generacion.cuarta.estudiantes[11]));
+      pintaEstudiantesMexC(Object.values(data.mexico.generacion.cuarta.estudiantes[12]));
+      pintaEstudiantesMexC(Object.values(data.mexico.generacion.cuarta.estudiantes[13]));
+      pintaEstudiantesMexC(Object.values(data.mexico.generacion.cuarta.estudiantes[14]));
+      //imprime alumnas de Mexico quinta generacion
+      pintaEstudiantesMexQ(Object.values(data.mexico.generacion.quinta.estudiantes[0]));
+      pintaEstudiantesMexQ(Object.values(data.mexico.generacion.quinta.estudiantes[1]));
+      pintaEstudiantesMexQ(Object.values(data.mexico.generacion.quinta.estudiantes[2]));
+      pintaEstudiantesMexQ(Object.values(data.mexico.generacion.quinta.estudiantes[3]));
+      pintaEstudiantesMexQ(Object.values(data.mexico.generacion.quinta.estudiantes[4]));
+      pintaEstudiantesMexQ(Object.values(data.mexico.generacion.quinta.estudiantes[5]));
+      pintaEstudiantesMexQ(Object.values(data.mexico.generacion.quinta.estudiantes[6]));
+      pintaEstudiantesMexQ(Object.values(data.mexico.generacion.quinta.estudiantes[7]));
+      pintaEstudiantesMexQ(Object.values(data.mexico.generacion.quinta.estudiantes[8]));
+      pintaEstudiantesMexQ(Object.values(data.mexico.generacion.quinta.estudiantes[9]));
+      pintaEstudiantesMexQ(Object.values(data.mexico.generacion.quinta.estudiantes[10]));
+      pintaEstudiantesMexQ(Object.values(data.mexico.generacion.quinta.estudiantes[11]));
+      pintaEstudiantesMexQ(Object.values(data.mexico.generacion.quinta.estudiantes[12]));
+      pintaEstudiantesMexQ(Object.values(data.mexico.generacion.quinta.estudiantes[13]));
+      pintaEstudiantesMexQ(Object.values(data.mexico.generacion.quinta.estudiantes[14]));
+*/
+//imprime alumnas de Santiago tercera generacion
+pintaEstudiantesSntT(Object.values(data.santiago.generacion.tercera.estudiantes[0]));
+pintaEstudiantesSntT(Object.values(data.santiago.generacion.tercera.estudiantes[1]));
+pintaEstudiantesSntT(Object.values(data.santiago.generacion.tercera.estudiantes[2]));
+pintaEstudiantesSntT(Object.values(data.santiago.generacion.tercera.estudiantes[3]));
+pintaEstudiantesSntT(Object.values(data.santiago.generacion.tercera.estudiantes[4]));
+pintaEstudiantesSntT(Object.values(data.santiago.generacion.tercera.estudiantes[5]));
+pintaEstudiantesSntT(Object.values(data.santiago.generacion.tercera.estudiantes[6]));
+pintaEstudiantesSntT(Object.values(data.santiago.generacion.tercera.estudiantes[7]));
+pintaEstudiantesSntT(Object.values(data.santiago.generacion.tercera.estudiantes[8]));
+pintaEstudiantesSntT(Object.values(data.santiago.generacion.tercera.estudiantes[9]));
+pintaEstudiantesSntT(Object.values(data.santiago.generacion.tercera.estudiantes[10]));
+pintaEstudiantesSntT(Object.values(data.santiago.generacion.tercera.estudiantes[11]));
+pintaEstudiantesSntT(Object.values(data.santiago.generacion.tercera.estudiantes[12]));
+pintaEstudiantesSntT(Object.values(data.santiago.generacion.tercera.estudiantes[13]));
+pintaEstudiantesSntT(Object.values(data.santiago.generacion.tercera.estudiantes[14]));
+// imprime alumnas de Mexico cuarta generacion
+pintaEstudiantesSntC(Object.values(data.santiago.generacion.cuarta.estudiantes[0]));
+pintaEstudiantesSntC(Object.values(data.santiago.generacion.cuarta.estudiantes[1]));
+pintaEstudiantesSntC(Object.values(data.santiago.generacion.cuarta.estudiantes[2]));
+pintaEstudiantesSntC(Object.values(data.santiago.generacion.cuarta.estudiantes[3]));
+pintaEstudiantesSntC(Object.values(data.santiago.generacion.cuarta.estudiantes[4]));
+pintaEstudiantesSntC(Object.values(data.santiago.generacion.cuarta.estudiantes[5]));
+pintaEstudiantesSntC(Object.values(data.santiago.generacion.cuarta.estudiantes[6]));
+pintaEstudiantesSntC(Object.values(data.santiago.generacion.cuarta.estudiantes[7]));
+pintaEstudiantesSntC(Object.values(data.santiago.generacion.cuarta.estudiantes[8]));
+pintaEstudiantesSntC(Object.values(data.santiago.generacion.cuarta.estudiantes[9]));
+pintaEstudiantesSntC(Object.values(data.santiago.generacion.cuarta.estudiantes[10]));
+pintaEstudiantesSntC(Object.values(data.santiago.generacion.cuarta.estudiantes[11]));
+pintaEstudiantesSntC(Object.values(data.santiago.generacion.cuarta.estudiantes[12]));
+pintaEstudiantesSntC(Object.values(data.santiago.generacion.cuarta.estudiantes[13]));
+pintaEstudiantesSntC(Object.values(data.santiago.generacion.cuarta.estudiantes[14]));
+//imprime alumnas de Mexico quinta generacion
+pintaEstudiantesSntQ(Object.values(data.santiago.generacion.quinta.estudiantes[0]));
+pintaEstudiantesSntQ(Object.values(data.santiago.generacion.quinta.estudiantes[1]));
+pintaEstudiantesSntQ(Object.values(data.santiago.generacion.quinta.estudiantes[2]));
+pintaEstudiantesSntQ(Object.values(data.santiago.generacion.quinta.estudiantes[3]));
+pintaEstudiantesSntQ(Object.values(data.santiago.generacion.quinta.estudiantes[4]));
+pintaEstudiantesSntQ(Object.values(data.santiago.generacion.quinta.estudiantes[5]));
+pintaEstudiantesSntQ(Object.values(data.santiago.generacion.quinta.estudiantes[6]));
+pintaEstudiantesSntQ(Object.values(data.santiago.generacion.quinta.estudiantes[7]));
+pintaEstudiantesSntQ(Object.values(data.santiago.generacion.quinta.estudiantes[8]));
+pintaEstudiantesSntQ(Object.values(data.santiago.generacion.quinta.estudiantes[9]));
+pintaEstudiantesSntQ(Object.values(data.santiago.generacion.quinta.estudiantes[10]));
+pintaEstudiantesSntQ(Object.values(data.santiago.generacion.quinta.estudiantes[11]));
+pintaEstudiantesSntQ(Object.values(data.santiago.generacion.quinta.estudiantes[12]));
+pintaEstudiantesSntQ(Object.values(data.santiago.generacion.quinta.estudiantes[13]));
+pintaEstudiantesSntQ(Object.values(data.santiago.generacion.quinta.estudiantes[14]));
+
+
+
+
+
+
+
+
+
+
+
+
+    //Aqui se imprimirian las alumnas de Lima
       // con esto se imprime el nombre y el correo de cada una
       /* //.lo puse al reves por que primero salia el correo, mejor primero el nombre.....primera estudiante con su primera key(nombre)(correo)...........primera estudiante con el valor de la primera key
        document.getElementById('estudiantesLimaTerceraN0').innerHTML = Object.keys(data.lima.generacion.tercera.estudiantes[0])[1]+ ": "  +  Object.values(data.lima.generacion.tercera.estudiantes[0])[1];
@@ -89,6 +246,7 @@ fetch(laboratoriaAPI).then((res) => {
       document.getElementById('estudiantesLimaTerceraC14').innerHTML = Object.keys(data.lima.generacion.tercera.estudiantes[14].progreso)[0]+ ": "  + Object.values(data.lima.generacion.tercera.estudiantes[14].progreso)[0];
       */ //abajo hice un tema por cada una y un subtema por cada una, es que me dio sueño :(
       //.......................................................................................entrando al primer estudiante..primer tema..nombre del tema........duracionde tema..... concatenar con el valor de la key duracion de tema:........................................................el numero.
+/*
       document.getElementById('estudiantesLimaTerceraN0').innerHTML = "01-Introduccion-a-programacion:  "+ Object.keys(data.lima.generacion.tercera.estudiantes[0].progreso.temas["01-Introduccion-a-programacion"])[0]+ ": "  + Object.values(data.lima.generacion.tercera.estudiantes[0].progreso.temas["01-Introduccion-a-programacion"])[0];
       document.getElementById('estudiantesLimaTerceraC0').innerHTML = Object.keys(data.lima.generacion.tercera.estudiantes[0].progreso.temas["01-Introduccion-a-programacion"])[1]+ ": "  + Object.values(data.lima.generacion.tercera.estudiantes[0].progreso.temas["01-Introduccion-a-programacion"])[1];
       document.getElementById('estudiantesLimaTerceraP0').innerHTML = Object.keys(data.lima.generacion.tercera.estudiantes[0].progreso.temas["01-Introduccion-a-programacion"])[2]+ ": "  + Object.values(data.lima.generacion.tercera.estudiantes[0].progreso.temas["01-Introduccion-a-programacion"])[2]+"%";
@@ -148,7 +306,7 @@ fetch(laboratoriaAPI).then((res) => {
       document.getElementById('estudiantesLimaTerceraN14').innerHTML = "06-ejercicios: "+ Object.keys(data.lima.generacion.tercera.estudiantes[14].progreso.temas["02-Variables-y-tipo-de-datos"].subtemas["06-ejercicios"])[0]+ ": "  + Object.values(data.lima.generacion.tercera.estudiantes[14].progreso.temas["02-Variables-y-tipo-de-datos"].subtemas["06-ejercicios"])[0];
       document.getElementById('estudiantesLimaTerceraC14').innerHTML = Object.keys(data.lima.generacion.tercera.estudiantes[14].progreso.temas["02-Variables-y-tipo-de-datos"].subtemas["06-ejercicios"])[1]+ ": "  + Object.values(data.lima.generacion.tercera.estudiantes[14].progreso.temas["02-Variables-y-tipo-de-datos"].subtemas["06-ejercicios"])[1];
       document.getElementById('estudiantesLimaTerceraP14').innerHTML = Object.keys(data.lima.generacion.tercera.estudiantes[14].progreso.temas["02-Variables-y-tipo-de-datos"].subtemas["06-ejercicios"])[2]+ ": "  + Object.values(data.lima.generacion.tercera.estudiantes[14].progreso.temas["02-Variables-y-tipo-de-datos"].subtemas["06-ejercicios"])[2];
-
+*/
     }).catch((error) => {
     console.log(error);
   })
