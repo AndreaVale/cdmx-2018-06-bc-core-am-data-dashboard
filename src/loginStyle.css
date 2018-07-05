@@ -1,0 +1,17 @@
+/* Estilos Login*/
+body {
+  background: url('../src/images/fundadores.jpg');
+  font-family: 'Open Sans', sans-serif !important;
+}
+#login-text {
+  text-align: center;
+  padding: 20px;
+}
+h4 {
+  margin: 25px 0 0 !important;
+}
+#login-form {
+  border-radius: 20px;
+  padding: 2%;
+  background: #ffe521ab;
+}
