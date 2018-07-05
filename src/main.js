@@ -93,13 +93,14 @@ const pintaEstudiantesMexQ = (estudiantes) => {
 });
 }
 //Estudiantes DE santiago
+
 const pintaEstudiantesSntT = (estudiantes) => {
 
   const containerEstudiantes = document.getElementById('alumnasTercera');
 
   estudiantes.forEach((generacion) => {
   const option = document.createElement('label');
-  option.innerHTML = "---------- " + generacion ;
+  option.innerHTML = "------ " + generacion ;
   containerEstudiantes.appendChild(option);
 });
 }
@@ -109,7 +110,7 @@ const pintaEstudiantesSntC = (estudiantes) => {
 
   estudiantes.forEach((generacion) => {
   const option = document.createElement('label');
-  option.innerHTML = "--------- " + generacion ;
+  option.innerHTML = "----- " + generacion ;
   containerEstudiantes.appendChild(option);
 });
 }
@@ -119,7 +120,17 @@ const pintaEstudiantesSntQ = (estudiantes) => {
 
   estudiantes.forEach((generacion) => {
   const option = document.createElement('label');
-  option.innerHTML = "--------- " + generacion  ;
+  option.innerHTML = "----- " + generacion  ;
   containerEstudiantes.appendChild(option);
+});
+}
+const pintaTemasSntQ = (temas) => {
+
+  const containerTemas = document.getElementById('temasQuinta');
+
+  temas.forEach((estudiantes) => {
+  const option = document.createElement('label');
+  option.innerHTML = "----- " + estudiantes  ;
+  containerTemas.appendChild(option);
 });
 }
