@@ -1,6 +1,7 @@
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
+/* Estilos Data Dashboard */
+body {
+  font-family: 'Open Sans', sans-serif !important;
+}
 header {
   background: #000;
   position: fixed;
@@ -9,11 +10,12 @@ header {
   margin: 0 !important;
 }
 #usuario{
-text-align: right;
-margin-top: 30px;
-margin-right: 100px;
-color: white;
-line-height: 20px;
+  text-align: right;
+  margin-top: 30px;
+  margin-right: 100px;
+  color: white;
+  line-height: 20px;
+  font-family: 'Bitter', serif;
 }
 .row .info-users .usarix .icono{
   line-height: 18px;
@@ -27,15 +29,15 @@ line-height: 20px;
   height: 100% !important;
   background: yellow;
   font-size: 25px;
-  font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  padding: 5% 0 0;
+  padding: 3% 0 0;
   top: 86px;
+  font-family: 'Bitter', serif;
 }
 .nav-side-menu label {
 	display: block;
-	padding: 5px;
+	padding: 3px;
   cursor: pointer;
 }
 .nav-side-menu label:hover{
@@ -48,6 +50,8 @@ line-height: 20px;
 	max-height: 0;
 	transition: all .4s linear;
   padding: 0;
+  text-transform: capitalize;
+  font-family: 'Open Sans', sans-serif;
 }
 .nav-side-menu input{
 	display: none;
@@ -75,8 +79,17 @@ line-height: 20px;
   color: #fff !important;
 }
 .container {
-  margin: 50px 50px 0;
+  margin: 50px 50px;
 }
-.col-lg-8{
-  background-color: #E0E0E0;
+#titulo {
+  margin: 0 0 20px;
+  font-family: 'Bitter', serif;
+}
+.card {
+  display: inline-flex !important;
+  width: 32%;
+  margin: 5px;
+  height: 195px;
+  background: #eee !important;
+  padding: 10px;
 }

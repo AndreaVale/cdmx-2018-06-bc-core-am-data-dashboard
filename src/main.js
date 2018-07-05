@@ -30,107 +30,24 @@ const pintaGeneracionesSnt = (generacion) => {
   containerCampus.appendChild(option);
 });
 }
-//estudiantes DE LIMA
-const pintaEstudiantesLimaT = (estudiantes) => {
 
-  const containerEstudiantes = document.getElementById('alumnasTercera');
+//Alumnas
+const container = document.getElementById('result');
 
-  estudiantes.forEach((generacion) => {
-  const option = document.createElement('label');
-  option.innerHTML = "---------- " + generacion ;
-  containerEstudiantes.appendChild(option);
-});
-}
-const pintaEstudiantesLimaC = (estudiantes) => {
+renderInfo = (alumnas) => {
+  document.getElementById('generacionesLima').addEventListener('click',(event) => {
+    let result = '';
+    console.log(alumnas.length);
 
-  const containerEstudiantes = document.getElementById('alumnasCuarta');
+    for (let i = 0; i < alumnas.length; i++) {
 
-  estudiantes.forEach((generacion) => {
-  const option = document.createElement('label');
-  option.innerHTML = "---------- " + generacion ;
-  containerEstudiantes.appendChild(option);
-});
-}
-const pintaEstudiantesLimaQ = (estudiantes) => {
-
-  const containerEstudiantes = document.getElementById('alumnasQuinta');
-
-  estudiantes.forEach((generacion) => {
-  const option = document.createElement('label');
-  option.innerHTML = "---------- " + generacion ;
-  containerEstudiantes.appendChild(option);
-});
-}
-//Estudiantes de mexico
-const pintaEstudiantesMexT = (estudiantes) => {
-
-  const containerEstudiantes = document.getElementById('alumnasTercera');
-
-  estudiantes.forEach((generacion) => {
-  const option = document.createElement('label');
-  option.innerHTML = "---------- " + generacion ;
-  containerEstudiantes.appendChild(option);
-});
-}
-const pintaEstudiantesMexC = (estudiantes) => {
-
-  const containerEstudiantes = document.getElementById('alumnasCuarta');
-
-  estudiantes.forEach((generacion) => {
-  const option = document.createElement('label');
-  option.innerHTML = "---------- " + generacion ;
-  containerEstudiantes.appendChild(option);
-});
-}
-const pintaEstudiantesMexQ = (estudiantes) => {
-
-  const containerEstudiantes = document.getElementById('alumnasQuinta');
-
-  estudiantes.forEach((generacion) => {
-  const option = document.createElement('label');
-  option.innerHTML = "---------- " + generacion ;
-  containerEstudiantes.appendChild(option);
-});
-}
-//Estudiantes DE santiago
-
-const pintaEstudiantesSntT = (estudiantes) => {
-
-  const containerEstudiantes = document.getElementById('alumnasTercera');
-
-  estudiantes.forEach((generacion) => {
-  const option = document.createElement('label');
-  option.innerHTML = "------ " + generacion ;
-  containerEstudiantes.appendChild(option);
-});
-}
-const pintaEstudiantesSntC = (estudiantes) => {
-
-  const containerEstudiantes = document.getElementById('alumnasCuarta');
-
-  estudiantes.forEach((generacion) => {
-  const option = document.createElement('label');
-  option.innerHTML = "----- " + generacion ;
-  containerEstudiantes.appendChild(option);
-});
-}
-const pintaEstudiantesSntQ = (estudiantes) => {
-
-  const containerEstudiantes = document.getElementById('alumnasQuinta');
-
-  estudiantes.forEach((generacion) => {
-  const option = document.createElement('label');
-  option.innerHTML = "----- " + generacion  ;
-  containerEstudiantes.appendChild(option);
-});
-}
-const pintaTemasSntQ = (temas) => {
-
-  const containerTemas = document.getElementById('temasQuinta');
-
-  temas.forEach((estudiantes) => {
-  const option = document.createElement('label');
-  option.innerHTML = "----- " + estudiantes  ;
-  containerTemas.appendChild(option);
-});
+      result += `<div class="card">
+                   <p>Nombre: ${alumnas[i].nombre}</p>
+                   <p>Correo: ${alumnas[i].correo}</p>
+                   <p>Turno: ${alumnas[i].turno}</p>
+                   <p>Progreso: ${alumnas[i].progreso.porcentajeCompletado}</p>
+                 </div>`
+    }
+    container.innerHTML = result;
+  });
 }
