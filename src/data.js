@@ -32,12 +32,14 @@ fetch(laboratoriaAPI).then((res) => {
       alumnasQuintaMex(data.mexico.generacion.quinta.estudiantes);
       //Imprime alumnas Mexico 3
       alumnasTerceraMex(data.mexico.generacion.tercera.estudiantes);
-
-
-
       //Imprime generaciones santiago
       pintaGeneracionesSnt(Object.keys(data.santiago.generacion));
-
+      //Imprime alumnas Santiago 4
+      alumnasCuartaSnt(data.santiago.generacion.cuarta.estudiantes);
+      //Imprime alumnas Santiago 5
+      alumnasQuintaSnt(data.santiago.generacion.quinta.estudiantes);
+      //Imprime alumnas Santiago 3
+      alumnasTerceraSnt(data.santiago.generacion.tercera.estudiantes);
     }).catch((error) => {
     console.log(error);
   })
