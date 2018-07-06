@@ -18,6 +18,7 @@ const pintaGeneracionesMex = (generacion) => {
 
   generacion.forEach((sede) => {
   const option = document.createElement('label');
+    option.id = sede + "mexico";
   option.innerHTML = sede + ' generacion';
   containerCampus.appendChild(option);
 });
@@ -92,5 +93,67 @@ alumnasTerceraInfo = (alumnas) => {
                  </div>`
     }
     containerTres.innerHTML = result;
+  });
+}
+
+//Imprime alumnas Mexico 4 G
+const containerCuatro = document.getElementById('result');
+
+alumnasCuartaMex = (alumnas) => {
+  document.getElementById('cuartamexico').addEventListener('click',(event) => {
+    let result = '';
+    console.log(alumnas.length);
+
+    for (let i = 0; i < alumnas.length; i++) {
+
+      result += `<div class="card">
+                   <p>Nombre: ${alumnas[i].nombre}</p>
+                   <p>Correo: ${alumnas[i].correo}</p>
+                   <p>Turno: ${alumnas[i].turno}</p>
+                   <p>Progreso: ${alumnas[i].progreso.porcentajeCompletado}%</p>
+                 </div>`
+    }
+    containerCuatro.innerHTML = result;
+  });
+}
+
+//Imprime alumnas Mexico 5 G
+const containerQuinto = document.getElementById('result');
+
+alumnasQuintaMex = (alumnas) => {
+  document.getElementById('quintamexico').addEventListener('click',(event) => {
+    let result = '';
+    console.log(alumnas.length);
+
+    for (let i = 0; i < alumnas.length; i++) {
+
+      result += `<div class="card">
+                   <p>Nombre: ${alumnas[i].nombre}</p>
+                   <p>Correo: ${alumnas[i].correo}</p>
+                   <p>Turno: ${alumnas[i].turno}</p>
+                   <p>Progreso: ${alumnas[i].progreso.porcentajeCompletado}%</p>
+                 </div>`
+    }
+    containerQuinto.innerHTML = result;
+  });
+}
+//Imprime alumnas Mexico 3 G
+const containerSexto = document.getElementById('result');
+
+alumnasTerceraMex = (alumnas) => {
+  document.getElementById('terceramexico').addEventListener('click',(event) => {
+    let result = '';
+    console.log(alumnas.length);
+
+    for (let i = 0; i < alumnas.length; i++) {
+
+      result += `<div class="card">
+                   <p>Nombre: ${alumnas[i].nombre}</p>
+                   <p>Correo: ${alumnas[i].correo}</p>
+                   <p>Turno: ${alumnas[i].turno}</p>
+                   <p>Progreso: ${alumnas[i].progreso.porcentajeCompletado}%</p>
+                 </div>`
+    }
+    containerSexto.innerHTML = result;
   });
 }

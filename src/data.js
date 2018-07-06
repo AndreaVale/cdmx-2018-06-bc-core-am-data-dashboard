@@ -18,16 +18,26 @@ fetch(laboratoriaAPI).then((res) => {
       document.getElementById('sede-snt').innerHTML = Object.keys(data)[2];
       //Imprime generaciones lima
       pintaGeneracionesLima(Object.keys(data.lima.generacion));
-      //Imprime generaciones mex
-      pintaGeneracionesMex(Object.keys(data.mexico.generacion));
-      //Imprime generaciones santiago
-      pintaGeneracionesSnt(Object.keys(data.santiago.generacion));
       //Imprime alumnas lima 4
       alumnasCuartaInfo(data.lima.generacion.cuarta.estudiantes);
       //Imprime alumnas lima 5
       alumnasQuintaInfo(data.lima.generacion.quinta.estudiantes);
       //Imprime alumnas lima 3
       alumnasTerceraInfo(data.lima.generacion.tercera.estudiantes);
+      //Imprime generaciones Mexico
+      pintaGeneracionesMex(Object.keys(data.mexico.generacion));
+      //Imprime alumnas Mexico 4
+      alumnasCuartaMex(data.mexico.generacion.cuarta.estudiantes);
+      //Imprime alumnas Mexico 5
+      alumnasQuintaMex(data.mexico.generacion.quinta.estudiantes);
+      //Imprime alumnas Mexico 3
+      alumnasTerceraMex(data.mexico.generacion.tercera.estudiantes);
+
+
+
+      //Imprime generaciones santiago
+      pintaGeneracionesSnt(Object.keys(data.santiago.generacion));
+
     }).catch((error) => {
     console.log(error);
   })
