@@ -22,8 +22,12 @@ fetch(laboratoriaAPI).then((res) => {
       pintaGeneracionesMex(Object.keys(data.mexico.generacion));
       //Imprime generaciones santiago
       pintaGeneracionesSnt(Object.keys(data.santiago.generacion));
-      //Imprime alumnas
-      renderInfo(data.lima.generacion.cuarta.estudiantes);
+      //Imprime alumnas lima 4
+      alumnasCuartaInfo(data.lima.generacion.cuarta.estudiantes);
+      //Imprime alumnas lima 5
+      alumnasQuintaInfo(data.lima.generacion.quinta.estudiantes);
+      //Imprime alumnas lima 3
+      alumnasTerceraInfo(data.lima.generacion.tercera.estudiantes);
     }).catch((error) => {
     console.log(error);
   })
