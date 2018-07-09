@@ -9,13 +9,23 @@ header {
   z-index: 999;
   margin: 0 !important;
 }
-#usuario{
+.info-users {
   text-align: right;
-  margin-top: 30px;
-  margin-right: 100px;
-  color: white;
-  line-height: 20px;
+}
+#usuario{
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
   font-family: 'Bitter', serif;
+  margin: 10px 15px 0 0;
+}
+#usuario-icon {
+  background: url(../src/images/user.png) no-repeat;
+  height: 70px;
+  width: 65px;
+  margin: 10px 25px 0 0;
+  display: inline-block;
+  vertical-align: middle;
 }
 .row .info-users .usarix .icono{
   line-height: 18px;
@@ -27,8 +37,8 @@ header {
 .nav-side-menu {
   position: fixed !important;
   height: 100% !important;
-  background: yellow;
-  font-size: 25px;
+  background: #FFE521;
+  font-size: 24px;
   text-align: center;
   text-transform: uppercase;
   padding: 3% 0 0;
@@ -64,7 +74,7 @@ header {
 	height: auto;
 	max-height: 200px;
 	transform: all;
-  font-size: 16px;
+  font-size: 17px;
 }
 .content {
   float: right;
@@ -81,15 +91,27 @@ header {
 .container {
   margin: 50px 50px;
 }
-#titulo {
+.generacionTitle {
   margin: 0 0 20px;
   font-family: 'Bitter', serif;
+  background: #56F89A;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
 }
-.card {
-  display: inline-flex !important;
-  width: 32%;
-  margin: 5px;
-  height: 195px;
-  background: #eee !important;
-  padding: 10px;
+.generacion {
+  font-size: 45px;
+  font-weight: bold;
+  display: block;
+}
+.btn-primary {
+  background-color: #FF009E !important;
+  border-color: #FF009E !important;
+}
+.btn-primary:hover {
+  background-color: #000 !important;
+  border-color: #000 !important;
+}
+#alumnasResult {
+  display: none;
 }
