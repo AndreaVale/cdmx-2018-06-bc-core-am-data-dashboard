@@ -57,6 +57,7 @@ alumnasCuartaInfo = (alumnas) => {
                    </div>`;
     containerGeracion.innerHTML = titleResult;
     container.innerHTML = result;
+    document.getElementById('grafica').style.display = 'none';
     document.getElementById('alumnasResult').style.display = 'initial';
   });
 };
@@ -84,6 +85,7 @@ alumnasQuintaInfo = (alumnas) => {
                    </div>`;
     containerGeracionDos.innerHTML = titleResult;
     containerDos.innerHTML = result;
+    document.getElementById('grafica').style.display = 'none';
     document.getElementById('alumnasResult').style.display = 'initial';
   });
 };
@@ -111,6 +113,7 @@ alumnasTerceraInfo = (alumnas) => {
                    </div>`;
     containerGeracionTres.innerHTML = titleResult;
     containerTres.innerHTML = result;
+    document.getElementById('grafica').style.display = 'none';
     document.getElementById('alumnasResult').style.display = 'initial';
   });
 };
@@ -138,6 +141,7 @@ alumnasCuartaMex = (alumnas) => {
                    </div>`;
     containerGeracionCuatro.innerHTML = titleResult;
     containerCuatro.innerHTML = result;
+    document.getElementById('grafica').style.display = 'none';
     document.getElementById('alumnasResult').style.display = 'initial';
   });
 };
@@ -165,6 +169,7 @@ alumnasQuintaMex = (alumnas) => {
                    </div>`;
     containerGeracionQuinto.innerHTML = titleResult;
     containerQuinto.innerHTML = result;
+    document.getElementById('grafica').style.display = 'none';
     document.getElementById('alumnasResult').style.display = 'initial';
   });
 };
@@ -192,6 +197,7 @@ alumnasTerceraMex = (alumnas) => {
                    </div>`;
     containerGeracionSexto.innerHTML = titleResult;
     containerSexto.innerHTML = result;
+    document.getElementById('grafica').style.display = 'none';
     document.getElementById('alumnasResult').style.display = 'initial';
   });
 };
@@ -219,6 +225,7 @@ alumnasCuartaSnt = (alumnas) => {
                    </div>`;
     containerGeracionSiete.innerHTML = titleResult;
     containerSiete.innerHTML = result;
+    document.getElementById('grafica').style.display = 'none';
     document.getElementById('alumnasResult').style.display = 'initial';
   });
 };
@@ -246,6 +253,7 @@ alumnasQuintaSnt = (alumnas) => {
                    </div>`;
     containerGeracionOcho.innerHTML = titleResult;
     containerOcho.innerHTML = result;
+    document.getElementById('grafica').style.display = 'none';
     document.getElementById('alumnasResult').style.display = 'initial';
   });
 };
@@ -273,25 +281,52 @@ alumnasTerceraSnt = (alumnas) => {
                    </div>`;
     containerGeracionNueve.innerHTML = titleResult;
     containerNueve.innerHTML = result;
+    document.getElementById('grafica').style.display = 'none';
     document.getElementById('alumnasResult').style.display = 'initial';
   });
 };
 
 // BUSCADOR -------------------------------------------------------------
-var search = document.getElementById('search'),
-  alumna = document.getElementsByTagName('th'),
-  forEach = Array.prototype.forEach;
+/*let search = document.getElementById('search'),
+  alumnas = document.getElementsByTagName('th');
+const alumnasArray = Array.from(alumnas);
 
-search.addEventListener('keyup', function(result) {
-  var choice = this.value;
+search.addEventListener('keyup', function(event) {
+  var choice = event.target.value;
+  const filteredStudents = alumnasArray.filter((alumna)=> {
+    console.log(alumna.innerText)
+    return alumna.innerHTML.toLowerCase().indexOf(choice.toLowerCase()) !== -1;
+  })
 
-  forEach.call(alumna, function(final) {
-    if (final.innerHTML.toLowerCase().search(choice.toLowerCase()) === -1) {
+  console.log(filteredStudents);
+  /*alumnasArray.forEach(function(alumna) {
+
+    if (alumna.innerHTML.toLowerCase().search(choice.toLowerCase()) === -1) {
       document.getElementById('titleResult').style.display = 'none';
-      final.parentNode.style.display = 'none';
+      console.log(alumna.nextSibling);
+      alumna.parentNode.style.display = 'none';
     } else {
       document.getElementById('titleResult').style.display = '';
-      final.parentNode.style.display = '';
+      alumna.parentNode.style.display = '';
     }
-  });
+  }, false);*/
+
+//});
+var search = document.getElementById("search"),
+    alumnas = document.getElementsByTagName("th"),
+    forEach = Array.prototype.forEach;
+
+search.addEventListener("keyup", function(e){
+    var choice = this.value;
+
+    forEach.call(alumnas, function(f){
+        if (f.innerHTML.toLowerCase().search(choice.toLowerCase()) == -1) {
+            document.getElementById('titleResult').style.display = 'none';
+            f.parentNode.style.display = "none";
+          }
+        else {
+            document.getElementById('titleResult').style.display = '';
+            f.parentNode.style.display = "";
+          }
+    });
 }, false);

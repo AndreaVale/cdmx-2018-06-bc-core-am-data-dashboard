@@ -80,6 +80,9 @@ header {
   float: right;
   top: 86px;
 }
+#grafica {
+  margin-top: 50px;
+}
 .search {
   float: right;
   padding: 20px;
