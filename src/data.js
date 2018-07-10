@@ -43,3 +43,25 @@ fetch(laboratoriaAPI).then((res) => {
 }).catch((error) => {
   console.log(error);
 });
+//GRAFICA
+new Chart(document.getElementById("doughnut-chart"), {
+    type: 'doughnut',
+    data: {
+      labels: ["Lima", "Mexico", "Santiago"],
+      datasets: [
+        {
+
+          backgroundColor: ["#FF009E", "#56F89A","#FFE521"],
+          //(3137),2923,3104
+          data: [69.7,64.9,68.9]
+        }
+      ]
+    },
+    options: {
+
+      title: {
+        display: true,
+        text: 'Porcentaje de completado de las alumnas de Laboratoria'
+      }
+    }
+});
