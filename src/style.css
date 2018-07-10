@@ -49,6 +49,7 @@ header {
 	display: block;
 	padding: 3px;
   cursor: pointer;
+ 
 }
 .nav-side-menu label:hover{
 	background: #ffffffb8;
@@ -62,6 +63,7 @@ header {
   padding: 0;
   text-transform: capitalize;
   font-family: 'Open Sans', sans-serif;
+  position: float;
 }
 .nav-side-menu input{
 	display: none;

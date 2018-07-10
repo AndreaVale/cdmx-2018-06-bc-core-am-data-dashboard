@@ -15,12 +15,12 @@
   </head>
 
   <body>
-
+<section class="container-fluid">  
     <header class="row">
-      <div class="header-logo col-sm-3">
+      <div class="header-logo col-sm-7 col-md-3 col-lg-3">
         <img src="../src/images/logo_laboratoria.png" alt="Laboratoria">
       </div>
-      <div class="info-users col-sm-9">
+      <div class="info-users col-sm-5 col-md-9 col-lg-9">
         <h3 id="usuario">Lucile</h3>
         <p id="usuario-icon"></p>
       </div>
@@ -28,20 +28,20 @@
 
     <!-- MENU -->
     <nav>
-      <div class="nav-side-menu col-lg-3">
-        <div class="menu">
+      <div class="nav-side-menu col-sm-2 col-md-3 col-lg-3">
+        <div>
           <input type="checkbox" id="check1">
           <label id="sede-lima" for="check1"></label>
           <ul id="generacionesLima">
           </ul>
         </div>
-        <div class="menu">
+        <div >
           <input type="checkbox" id="check2">
           <label id="sede-mex" for="check2"></label>
           <ul id="generacionesMex">
           </ul>
         </div>
-        <div class="menu">
+        <div>
           <input type="checkbox" id="check3">
           <label id="sede-snt" for="check3"></label>
           <ul id="generacionesSnt">
@@ -50,7 +50,7 @@
       </div>
     </nav>
     <!-- Contenido Dinamico -->
-    <div class="content col-lg-9">
+    <div class="content col-sm-10 col-md-9 col-lg-9">
       <!-- Seccion de GRAFICA Principal -->
       <div class="offset-lg-2 col-lg-8 offset-lg-2" id="grafica">
         <canvas id="doughnut-chart" width="400" height="250"></canvas>
@@ -171,8 +171,10 @@
         </div>
     </div>
     </div>
-    <!-- Scripts -->
-    <script src="main.js"></script>
-    <script src="data.js"></script>
+    
+  </section>
+<!-- Scripts -->
+<script src="main.js"></script>
+<script src="data.js"></script>
   </body>
 </html>
